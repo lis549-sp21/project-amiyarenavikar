@@ -1,4 +1,14 @@
-
+/* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header */
+header.page-header {
+    background: no-repeat left/cover url(../img/header.jpg);
+    display: flex;
+    height: 120px;
+    min-width: 120px;
+    align-items: center;
+    color: #fff;
+    text-shadow: #000 0 0 .2em;
+    font-family: sans-serif;
+}
 
 /* Code citation - https://www.w3schools.com/howto/howto_js_topnav.asp  */
 .topnav {
@@ -76,5 +86,23 @@
   .r {width: 70%; background-color: orange;} 
   .powerbi {width: 70%; background-color: yellowgreen;} 
   .python {width: 60%; background-color: gray;} 
+
+/* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer */
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #C70039;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
   
   
