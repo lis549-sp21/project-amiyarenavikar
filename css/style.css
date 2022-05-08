@@ -1,143 +1,96 @@
-/* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header */
-header.page-header {
-    background: no-repeat left/cover url(../img/header.jpg);
-    display: flex;
-    height: 120px;
-    min-width: 120px;
-    align-items: center;
-    color: #fff;
-    text-shadow: #000 0 0 .2em;
-    font-family: sans-serif;
-}
-
-/* Code citation - https://www.w3schools.com/howto/howto_js_topnav.asp  */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: sans-serif;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #C70039;
-    color: white;
-  }
-
-  img{
-    height: 500px;
-    width: 400px;
-}
-
-/* Header styling */
-#header {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -moz-justify-content: space-between;
-  -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
-  background: #222629 url("img/overlay.png");
-  box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-  color: #fff;
-  height: 100%;
-  left: 0;
-  overflow-y: auto;
-  position: fixed;
-  text-align: right;
-  top: 0;
-  width: 375px;
-}
-
-#header .top {
-    -moz-flex-grow: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
-    flex-grow: 1;
-}
-
-
-
-/* Code reference - https://www.digitalocean.com/community/tutorials/how-to-build-the-about-me-section-of-your-website-with-css-section-2*/
+@import
+url("https://fonts.googleapis.com/css?family=Raleway:300,300italic,400,600,700,900");
 
 * {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that float next to each other */
-  .column-2 {
-    float: left;
-    width: 45%;
-    padding: 40px;
-    padding-left:70px;
-    padding-right: 70px;
-    height: 475px;
-    margin:30px;
-    margin-right:30px;
-    margin-bottom: 70px;
-    background-color: silver;
-    line-height:2;
-  }
+  box-sizing: border-box;
+}
 
-/* Large profile image */
-.large-profile {
-    background: url('../img/c.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
+.logo {
+  height: 100px;
+  width: 100px;
+}
 
-/* Code reference - https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif, Arial;
+  text-align: center;
+}
+
+img {
+  height: 400px;
+  width: 600px;
+}
+
 .container {
-    width: 50%; /* Full width */
-    background-color: #ddd; /* Grey background */
-  }
-  
-  .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
-  }
-
-  .sql {width: 90%; background-color: green;} 
-  .r {width: 70%; background-color: orange;} 
-  .powerbi {width: 70%; background-color: yellowgreen;} 
-  .python {width: 60%; background-color: gray;} 
-
-/* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer */
-
-article {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+  width: 95%;
+  margin: 1em;
 }
 
-  footer {
-    display: flex;
-    justify-content: center;
-    background-color: #C70039;
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5em; 
 }
+
+.container p {
+  font-weight: 300;
+  display: block;
+  font-size: 1em;
   
-  
+}
+
+/* Button Styling */
+.button {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em 1.5em;
+  position: relative;
+  top: 200px;
+  color: white;
+  background-color: #f6d992;
+}
+
+/* Header Styling */
+/* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header */
+header {
+  background: url(../img/peach.abs.jpeg);
+  position: absolute;
+  width: 100%;
+  height: 235px;
+  margin-top: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: whitesmoke;
+}
+
+nav a:hover, nav a:focus {
+  color: silver;
+}
+
+
+/* Home Styling */
+.home {
+  background-image: url(../img/peach.jpeg);
+  padding: 10em 0;
+  color: white;
+}
+
