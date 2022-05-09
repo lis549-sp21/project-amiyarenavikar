@@ -298,16 +298,89 @@ nav a:hover, nav a:focus {
   height: 100%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "header header"
-    "main"
-    "footer footer";
   gap: 20px;
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
 }
+
+
+/* Skills Section Styling */
+/* Code citation - www.foolishdeveloper.com/2021/08/animated-skills-bar-html-css.html 
+                 - https://www.w3schools.com/css/css3_flexbox_container.asp */
+
+.wrapper{
+  width: 40%;
+  min-width: 570px;
+  position: absolute;
+  margin-bottom: 220px;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+
+.flex-container {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  margin-top: 300px;
+}
+
+.flex-container h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 33px;
+}
+
+.details {
+  width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar {
+  position: relative;
+  border: 2px solid #f6d992;
+  border-radius: 20px;
+}
+
+.bar div{
+  position: relative;
+  width: 0;
+  height: 9px;
+  border-radius: 10px;
+  background-color: #f6d992;
+}
+
+.skills:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+#sql-bar {
+  width: 90%;
+}
+
+#r-bar {
+  width: 90%;
+}
+
+#tableau-bar {
+  width: 80%;
+}
+
+#python-bar {
+  width: 65%;
+}
+
+#pb-bar {
+  width: 60%;
+}
+
+
 
 
 /* Footer styling */
