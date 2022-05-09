@@ -5,6 +5,7 @@ url("https://fonts.googleapis.com/css?family=Raleway:300,300italic,400,600,700,9
   box-sizing: border-box;
 }
 
+/* Typography styling */
 .logo {
   float: center;
   height: 100px;
@@ -73,6 +74,22 @@ h1 {
 }
 
 .button:hover, .button:focus {
+  background: white;
+  color: #f6b092;
+}
+
+.button-color {
+  font-size: 0.8rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1em 1.5em;
+  color: white;
+  background-color: #f6b092;
+  border-color: #f6b092;
+
+}
+
+.button-color:hover, .button-color:focus {
   background: white;
   color: #f6b092;
 }
@@ -169,6 +186,51 @@ nav a:hover, nav a:focus {
     padding: 0 0.6em;
   }
 }
+
+/* Portfolio Styling */
+.port-container {
+  display: flex;
+}
+
+
+.portfolio {
+  margin: 3em 0;
+}
+
+.portfolio-item {
+  margin: 0;
+  position: relative;
+}
+
+.portfolio-descr {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,0.75);
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+.portfolio-descr p {
+  margin: 1em;
+}
+
+/* Responsive styling */
+@media (min-width: 30rem) {
+  .portfolio-item {
+    width: 100%;
+  }
+}
+
+@media (min-width: 60rem) {
+  .portfolio-descr {
+    width: 50%;
+  }
+}
+
 
 
 
