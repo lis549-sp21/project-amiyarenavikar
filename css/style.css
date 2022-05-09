@@ -240,13 +240,9 @@ nav a:hover, nav a:focus {
   height: 214px;
 }
 
-#container {
-  position: absolute;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-top: 50vh;
+.cards * {
+  box-sizing: border-box;
 }
-
 .card {
   background-color: white;
   border: 1px solid #bacdd8;
@@ -284,6 +280,20 @@ nav a:hover, nav a:focus {
   padding: 16px 8px 8px 8px;
 }
 
+.cards {
+  max-width: 500px;
+  margin: auto;
+  top: 250px;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 /* Footer styling */
 footer {
@@ -291,7 +301,7 @@ footer {
   justify-content: center;
   background-color: #f6a192;
   color: #fff;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
 }
