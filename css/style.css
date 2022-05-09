@@ -187,6 +187,7 @@ nav a:hover, nav a:focus {
   }
 }
 
+/* Citation - www.developerdrive.com/responsive-image-gallery-flexbox/ */
 /* Portfolio Styling */
 .port-container {
   display: flex;
@@ -230,9 +231,6 @@ nav a:hover, nav a:focus {
     width: 50%;
   }
 }
-
-
-
 
 /* Footer styling */
 footer {
