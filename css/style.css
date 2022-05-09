@@ -29,10 +29,6 @@ img {
   width: 600px;
 }
 
-.container {
-  width: 95%;
-  margin: 1em;
-}
 
 h1 {
   font-weight: 300;
@@ -59,8 +55,6 @@ h1 {
   .title {
     font-size: 2rem;
   }
-
-  
 }
 
 /* Button Styling */
@@ -72,8 +66,7 @@ h1 {
   border-style: solid;
   padding: 1em 1.5em;
   position: relative;
-  top: 200px;
-  left: 35px;
+  top: 6em;
   color: white;
   background-color: #f6d992;
   border-color: #f6d992;
@@ -102,18 +95,37 @@ h1 {
 
 /* Header Styling */
 /* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header */
-header {
+.nav-header {
   background: url(../img/peach.abs.jpeg);
+}
+
+.home {
+  background-image: url(../img/pexels-scott-webb-1084510.jpg);
   background-size: cover;
+  background-position: center;
+  padding: 10em 0;
+  color: white;
+}
+
+.home-header {
+  background-color: white;
+  border: 2px solid	#f6a192;
   position: absolute;
-  width: 100%;
+  top: 15em;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
   height: 235px;
-  margin-top: 1em;
+  float: center;
+  color: black;
+  padding-bottom: 250px;
 }
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
   list-style: none;
 }
 
@@ -126,25 +138,18 @@ nav a {
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding: 0.5rem;
   color: whitesmoke;
 }
 
 nav a:hover, nav a:focus {
-  color: silver;
+  color: rgb(205, 138, 119);
+  text-decoration: underline;
 }
 
 
 /* Home Styling */
-.home {
-  background-image: url(../img/peach.jpeg);
-  background-size: cover;
-  background-position: center;
-  padding: 10em 0;
-  color: white;
-}
-
 .home-about {
   padding-top: 2.5em;
 
@@ -200,11 +205,6 @@ nav a:hover, nav a:focus {
   margin: 4em 0;
 }
 
-
-.portfolio {
-  
-}
-
 .portfolio-item {
   margin: 0;
   position: relative;
@@ -240,7 +240,7 @@ nav a:hover, nav a:focus {
 }
 
 /* Card Styling for education section */
-/*Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
+/* Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
 #container img {
   width: 100%;
   border-radius: 12px;
@@ -293,7 +293,7 @@ nav a:hover, nav a:focus {
   padding: 16px 8px 8px 8px;
 }
  
-/*Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
+/* Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
 .cards {
   max-width: 500px;
   margin: auto;
@@ -327,11 +327,11 @@ nav a:hover, nav a:focus {
 
 .flex-container {
   width: 100%;
+  max-height: 100%;
   padding: 30px 30px 50px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-  margin-top: 300px;
 }
 
 .flex-container h2 {
