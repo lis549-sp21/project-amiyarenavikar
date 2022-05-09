@@ -232,6 +232,59 @@ nav a:hover, nav a:focus {
   }
 }
 
+/* Card Styling for education section */
+/*Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
+#container img {
+  width: 100%;
+  border-radius: 12px;
+  height: 214px;
+}
+
+#container {
+  position: absolute;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 50vh;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #bacdd8;
+  padding: 8px;
+  border-radius: 12px;
+  
+}
+
+/* Style div elements that have class equal to tag */
+.tag {
+  padding: 4px 8px;
+  border: 1px solid #e5eaed;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #788697;
+}
+
+/* Style div elements that have class equal to name */
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+/* Style p element */
+.card p {
+  font-size: 14px;
+  color: #7f8c9b;
+  line-height: 150%;
+}
+
+.card__details {
+  /* Add space around the details */
+  padding: 16px 8px 8px 8px;
+}
+
+
 /* Footer styling */
 footer {
   display: flex;
