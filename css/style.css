@@ -428,24 +428,57 @@ nav a:hover, nav a:focus {
   margin-bottom: 30px;
 }
 
+/* SQL Bar */
 #sql-bar {
-  width: 90%;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode:both; 
+} 
+
+@keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 90%; }
 }
 
+/* R Bar */
 #r-bar {
-  width: 90%;
+  animation: rBar 3s ease-in-out;
+  animation-fill-mode:both; 
 }
 
+@keyframes rBar {
+  0% { width: 0; }
+  100% { width: 75%; }
+}
+
+/* Tableau Bar */
 #tableau-bar {
-  width: 80%;
+  animation: tBar 3s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+@keyframes tBar {
+  0% { width: 0; }
+  100% { width: 80%; }
 }
 
 #python-bar {
-  width: 65%;
+  animation: pBar 3s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+@keyframes pBar {
+  0% { width: 0; }
+  100% { width: 65%; }
 }
 
 #pb-bar {
-  width: 60%;
+  animation: pbBar 3s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+@keyframes pbBar {
+  0% { width: 0; }
+  100% { width: 60%; }
 }
 
 /* Start Circular Progress Bar CSS */
