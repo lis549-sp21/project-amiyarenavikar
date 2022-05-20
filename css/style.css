@@ -370,27 +370,34 @@ nav a:hover, nav a:focus {
 /* Code citation - www.foolishdeveloper.com/2021/08/animated-skills-bar-html-css.html 
                  - https://www.w3schools.com/css/css3_flexbox_container.asp */
 
-.wrapper{
-  width: 40%;
-  min-width: 570px;
-  position: absolute;
-  margin-bottom: 220px;
-  margin-top: 60px;
-  transform: translate(-50%,-50%);
-  left: 50%;
-  top: 50%;
+.flex-container {
+  display: flex;
+  width: 90%;
+  max-height: 100%;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  gap: 20px;
 }
 
-.flex-container {
-  width: 100%;
-  max-height: 100%;
+.flex-child {
+  flex: 1;
+  width: 75%;
   padding: 10px 30px 40px;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 
-.flex-container h2 {
+.flex-child:first-child {
+  margin-left: 20px;
+}
+
+.flex-child:last-child {
+  margin-right: 20px;
+}
+
+.flex-child h2 {
   margin-bottom: 50px;
   text-align: center;
   font-size: 33px;
@@ -441,6 +448,212 @@ nav a:hover, nav a:focus {
   width: 60%;
 }
 
+/* Start Circular Progress Bar CSS */
+
+.mh-skills .mh-professional-skill {
+  padding-right: 60px;
+}
+
+.mh-skills .mh-professional-skill h3{
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.mh-professional-skill {
+  padding-left: 20%;
+}
+
+.mh-professional-progress li {
+  align-items:center;
+  justify-content:center;
+  margin: 0 auto;
+  float: none;
+  width: 48%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.mh-progress {
+  margin-bottom: 10px;
+  font: 900;
+}
+
+.mh-professional-progress {
+  display:grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.pr-skill-name {
+  margin-top: 50px;
+  margin-right: 500px;
+  border: solid 2px red; 
+}
+
+/* All below code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html */
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #f6a192;
+  border-radius: 50%;
+  border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: white;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: #f6a192;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* Fill 1 */
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Fill 2 */
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Fill 3 */
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Fill 4 */
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-4 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Fill 1 */
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #f6d992;
+}
+
+/* Fill 2 */
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #f6d992;
+}
+
+/* Fill 3 */
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #f6d992;
+}
+
+/* Fill 4 */
+.mask .fill-4 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #f6d992;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+/* Fill 1 */
+.mask.full,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(35deg);
+}
+
+/* Fill 2 */
+.mask.full,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+/* Fill 3 */
+.mask.full,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(90deg);
+}
+
+/* Fill 4 */
+.mask.full,
+.circle .fill-4 {
+  animation: fill-4 ease-in-out 3s;
+  transform: rotate(0deg);
+}
+
+@keyframes fill-1{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(35deg);
+  }
+}
+  
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes fill-3{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes fill-4{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.skill-title {
+  padding-top: 50px;
+  /*border: solid 2px red; */
+}
+/* End code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html */
 
 /* Footer styling */
 footer {
