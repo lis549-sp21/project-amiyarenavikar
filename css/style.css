@@ -59,14 +59,14 @@ h1 {
 
 /* Button Styling */
 .button {
+  position: relative;
+  top: 80px;
   font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   border-width: 2px;
   border-style: solid;
   padding: 1em 1.5em;
-  position: relative;
-  top: 6em;
   color: white;
   background-color: #f6d992;
   border-color: #f6d992;
@@ -92,6 +92,8 @@ h1 {
   background: white;
   color: #f6b092;
 }
+
+
 
 /* Header Styling */
 /* Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header */
@@ -148,6 +150,17 @@ nav a:hover, nav a:focus {
   text-decoration: underline;
 }
 
+/* Button Responsive Styling */
+@media (max-width: 601px) {
+  .home-header {
+    height: 300px;
+  }
+
+  .button {
+    margin-bottom: 500px;
+  }
+}
+
 
 /* Home Styling */
 .home-about {
@@ -175,7 +188,7 @@ nav a:hover, nav a:focus {
 }
 
 /* Responsive styling */
-@media (min-width: 25rem) {
+@media (max-width: 598px) {
   h1 {
     font-size: 2rem;
   }
