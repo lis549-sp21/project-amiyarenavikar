@@ -150,14 +150,32 @@ nav a:hover, nav a:focus {
   text-decoration: underline;
 }
 
-/* Button Responsive Styling */
+/* Button Responsive Styling larges screen*/
+@media (max-width: 992px) {
+  .button {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* Button Responsive Styling medium screen*/
+@media (max-width: 768px) {
+  .button {
+    position: relative;
+    top: 100px;
+  }
+}
+
+/* Button Responsive Styling - Small screen */
 @media (max-width: 601px) {
   .home-header {
     height: 300px;
+    background-color: #f6b092;
   }
 
   .button {
-    margin-bottom: 500px;
+    position: relative;
+    top: 150px;
   }
 }
 
