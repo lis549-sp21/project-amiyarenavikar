@@ -726,8 +726,7 @@ nav a:hover, nav a:focus {
 }
 
 .container .card .slide.slide1 {
-  position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
@@ -742,8 +741,7 @@ nav a:hover, nav a:focus {
 }
 
 .container .card .slide.slide2 {
-  position: relative;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -761,14 +759,12 @@ nav a:hover, nav a:focus {
 
 .container .card .slide.slide2::after{
   content: "";
-  position: absolute;
   width: 30px;
   height: 4px;
   bottom: 15px;
   left: 50%;
   left: 50%;
   transform: translateX(-50%);
-  background: #2c73df;
 }
 
 .container .card .slide.slide2 .content p {
