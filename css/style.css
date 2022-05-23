@@ -719,6 +719,70 @@ nav a:hover, nav a:focus {
 }
 /* End code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html */
 
+
+/* Experience page styling */
+
+.exp-main {
+  background: linear-gradient( to right, #ffffb3,#ffe6e6);
+}
+
+.container-fluid {
+  box-shadow: 0 15px 30px 1px grey;
+  background: rgba(255, 255, 255, 0.90);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5em auto;
+  height: 200px;
+  width: 700px;
+}
+
+.collapsible {
+	position: relative;
+	text-align: left;
+	padding: 30px;
+	height: 100%;
+	float: left;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.collapsible h1 {
+	display: inline-block;
+	position: relative;
+	font-size: 40px;
+	margin: 0;
+}
+
+.active, .collapsible:hover {
+  background-color: #DCD1D4;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 50px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
 /* Footer styling */
 footer {
   bottom: 0;
