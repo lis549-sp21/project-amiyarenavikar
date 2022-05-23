@@ -720,66 +720,78 @@ nav a:hover, nav a:focus {
 /* End code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html */
 
 
-/* Experience page styling */
+.container .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #fff;
+}
 
-.exp-main {
+.container .card .slide {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
+  transform: translateY(100px);
   background: linear-gradient( to right, #ffffb3,#ffe6e6);
 }
 
-.container-fluid {
-  box-shadow: 0 15px 30px 1px grey;
-  background: rgba(255, 255, 255, 0.90);
+.container .card:hover .slide.slide1{
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.container .card:hover .slide.slide2{
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  bottom: 15px;
+  left: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c73df;
+}
+
+.container .card .slide.slide2 .content p {
+  margin: 0;
+  padding: 0;
   text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 5em auto;
-  height: 200px;
-  width: 700px;
+  color: #414141;
 }
 
-.collapsible {
-	position: relative;
-	text-align: left;
-	padding: 30px;
-	height: 100%;
-	float: left;
-  width: 100%;
-  cursor: pointer;
-  border: none;
-  background-color: white;
-}
-
-.collapsible h1 {
-	display: inline-block;
-	position: relative;
-	font-size: 40px;
-	margin: 0;
-}
-
-.active, .collapsible:hover {
-  background-color: #DCD1D4;
-}
-
-.collapsible:after {
-  content: '\002B';
-  color: black;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  font-size: 50px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
+.container .card .slide.slide2 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+} 
 
 
 
