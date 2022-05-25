@@ -10,6 +10,7 @@ url("https://fonts.googleapis.com/css?family=Raleway:300,300italic,400,600,700,9
   float: center;
   height: 100px;
   width: 100px;
+  border-radius: 50%;
 }
 
 body {
