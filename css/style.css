@@ -330,11 +330,6 @@ nav a:hover, nav a:focus {
 
 /* Card Styling for education section */
 /* Citation - https://www.freecodecamp.org/news/learn-css-basics-by-building-a-card-component/ */
-#container img {
-  width: 100%;
-  border-radius: 12px;
-  height: 214px;
-}
 
 #container {
   height: 100%;
@@ -351,6 +346,8 @@ nav a:hover, nav a:focus {
   padding: 8px;
   border-radius: 12px;
   margin: auto;
+  cursor: pointer;
+  width: 80%;
 }
 
 /* Style div elements that have class equal to tag */
@@ -368,6 +365,11 @@ nav a:hover, nav a:focus {
   font-size: 24px;
   font-weight: 600;
   margin-top: 16px;
+}
+
+.img-1 {
+  width: 100%;
+  background-color: white;
 }
 
 /* Style p element */
@@ -397,6 +399,18 @@ nav a:hover, nav a:focus {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
+}
+
+#collapseExample {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#collapseExample2 {
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
 }
 
 
