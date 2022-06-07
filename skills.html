@@ -8,11 +8,12 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/techgal.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 
    <!-- Code citation - https://www.w3schools.com/howto/howto_js_topnav.asp  -->
-   <header class="nav-header">
+   <header class="text-center nav-header" >
     <img src="img/my_logo.png" alt="my logo" class="logo"> 
 
     <!-- Code citation - https://www.w3schools.com/howto/howto_js_topnav.asp  -->
@@ -87,11 +88,13 @@
           <div class="mh-professional-skill">
 
             <h2>Professional Skills </h2>
+            <div class="row">
             <!-- Code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html -->
-            <div class="mh-professional-progress">
+              <div class="mh-professional-progress">
+                <div class="col text-center">
                   <p class="skill-title"> Communication </p>
                   <div class="circle-wrap">
-                    <div class="circle">
+                    <div class="text-center circle">
                       <div class="mask half">
                         <div class="fill-1"></div>
                     </div>
@@ -99,8 +102,9 @@
                     <div class="inside-circle"> 98% </div>
                     
                   </div>
-
-
+                </div>  
+ 
+                <div class="col text-center">
                   <p class="skill-title"> Leadership </p>
                   <div class="circle-wrap">
                     <div class="circle">
@@ -111,7 +115,9 @@
                     <div class="inside-circle"> 75% </div>
                     
                   </div>
+                </div>
 
+                <div class="col text-center">
 
                   <p class="skill-title"> Time Management </p>
                   <div class="circle-wrap">
@@ -123,8 +129,9 @@
                     <div class="inside-circle"> 85% </div>
                     
                   </div>
+                </div> 
 
-
+                <div class="col text-center">
                   <p class="skill-title"> Creativity </p>
                   <div class="circle-wrap">
                     <div class="circle">
@@ -135,10 +142,11 @@
                     <div class="inside-circle"> 100% </div>
                     
                   </div>
+                </div>
                   
                   
 
-                
+              </div>     
           </div>
         </div>
 
@@ -148,7 +156,7 @@
     
 
      <!-- Code citation - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer  -->
-    <footer>
+    <footer class="text-center">
             <p>© 2022 Amiya Renavikar
             <br>
             Contact: <a href="mailto:amiya@uw.edu">amiya@uw.edu</a></p>
