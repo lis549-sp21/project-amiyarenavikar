@@ -454,6 +454,7 @@ nav a:hover, nav a:focus {
   margin-bottom: 50px;
   text-align: center;
   font-size: 33px;
+  margin-top: 10px;
 }
 
 .details {
@@ -534,18 +535,19 @@ nav a:hover, nav a:focus {
   100% { width: 60%; }
 }
 
+.flex-container {
+  background-image: url(../img/pexels-scott-webb-1084510.jpg);
+  background-size: cover;
+}
 /* Start Circular Progress Bar CSS */
 
-.mh-skills .mh-professional-skill {
-  padding-right: 60px;
-}
-
-.mh-skills .mh-professional-skill h3{
-  font-size: 30px;
+.mh-skills .mh-professional-skill h2 {
+  font-size: 33px;
   line-height: 40px;
   text-align: center;
-  font-weight: 400;
+  margin-top: 10px;
   margin-bottom: 60px;
+  margin-right: 60px;
 }
 
 .mh-professional-skill {
