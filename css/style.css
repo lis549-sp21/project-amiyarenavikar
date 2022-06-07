@@ -25,6 +25,11 @@ body {
   flex-direction: column;
 }
 
+main {
+  background-image: url(../img/pexels-scott-webb-1084510.jpg);
+  background-size: cover;
+}
+
 
 img {
   height: 400px;
@@ -574,7 +579,6 @@ nav a:hover, nav a:focus {
 .pr-skill-name {
   margin-top: 50px;
   margin-right: 500px;
-  border: solid 2px red; 
 }
 
 /* All below code referenced from https://www.foolishdeveloper.com/2021/09/circular-progress-bar-using-html-css.html */
